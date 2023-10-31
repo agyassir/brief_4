@@ -4,6 +4,39 @@
     font-family: 'DM Sans', sans-serif;
 }
 
-.navbar {
-    display: flex;
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container__navbar__searchbar {
+    background: #E5E5E5;
+    border-radius: 100px;
+}
+
+.container__navbar__searchbar__icon {
+    margin-left: 13.5px;
+    margin-right: 10px;
+}
+
+.container__navbar__searchbar__input {
+    width: 90%;
+}
+
+.container__navbar__svg-wrap {
+    gap: 20px;
+}
+
+.container__navbar__svg-wrap a svg:hover {
+    fill: #FCA311;
+}
+
+.container__navbar__svg-wrap__burgermenu {
+    margin: 3.5px 0 0 20px;
+}
+
+.container__navbar__line {
+    opacity: 0.6;
+    user-select: none;
 }
