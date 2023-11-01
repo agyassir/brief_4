@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=DM+Sans:opsz,wght@9..40,200;9..40,400&family=Doppio+One&family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=DM+Sans:opsz,wght@9..40,200;9..40,400&family=Doppio+One&family=Inter:wght@300;700&family=Style+Script&display=swap');
 
 * {
     font-family: 'Inter', 'Doppio One', sans-serif;
@@ -22,6 +22,10 @@
     width: 90%;
 }
 
+.container__navbar__searchbar__input:focus {
+    outline: none;
+}
+
 .container__navbar__svg-wrap {
     gap: 20px;
 }
@@ -38,6 +42,7 @@
     opacity: 0.6;
     user-select: none;
 }
+
 .container__navbar__title {
     margin-left: 75px;
 }
@@ -80,6 +85,19 @@
 }
 
 .carousel__caption__banner-button:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.main__about-section {
+    background: rgb(229, 229, 229, 0.1);
+}
+
+.aboutus-button {
+    background: #FCA311;
+    padding: 20px 40px;
+    margin-left :175px;
+    font-weight: 700;
     color: #000000;
     text-decoration: none;
 }
