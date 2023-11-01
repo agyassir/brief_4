@@ -69,8 +69,8 @@
     <header class="carousel w-100">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li class="carousel-indicators__indicator" data-target="#carouselExampleIndicators" data-slide-to="0"
-                    class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                    class="active carousel-indicators__indicator"></li>
                 <li class="carousel-indicators__indicator" data-target="#carouselExampleIndicators" data-slide-to="1">
                 </li>
                 <li class="carousel-indicators__indicator" data-target="#carouselExampleIndicators" data-slide-to="2">
@@ -129,11 +129,14 @@
             <div class="d-flex justify-content-around">
                 <div class="container col-6 d-flex main__about-section__image-wrap justify-content-center">
                     <div class="mt-5">
-                        <div class="filler1 col-5 h-50 position-absolute" style="background: #14213D; z-index: -1; left: 60px; border-radius: 10px; top: 20px;"></div>
+                        <div class="filler1 col-5 h-50 position-absolute"
+                            style="background: #14213D; z-index: -1; left: 75px; border-radius: 10px; top: 30px;"></div>
                         <img class="image1 mt-4" src="img/images/whitechair.png" alt="">
-                        <img class="image2" style="margin-top: 22pc; margin-left: -175px; position: absolute;" src="img/images/yellowchair.png"
-                            alt="">
-                        <div class="filler2 col-3 h-25 position-absolute" style="background: #FCA311; margin-left: 26pc; margin-top: -10px; border-radius: 10px; z-index: -1;"></div>
+                        <img class="image2" style="margin-top: 22pc; margin-left: -175px; position: absolute;"
+                            src="img/images/yellowchair.png" alt="">
+                        <div class="filler2 col-3 h-25 position-absolute"
+                            style="min-width: 200px; max-width: 200px; background: #FCA311; margin-left: 26pc; margin-top: -10px; border-radius: 10px; z-index: -1;">
+                        </div>
                     </div>
                 </div>
                 <div class="col-6">
@@ -143,7 +146,8 @@
                     <h3 class="mt-3" style="font-weight: 700; font-size: 36px;">Discover our legacy of</h3>
                     <h3 class="ml-5" style="color: #FCA311; font-weight: 700; font-size: 34px;">Craftsmanship and style
                     </h3>
-                    <p class="aboutus-description mb-5 mt-5" style="width: 475px; font-weight: 700; margin: 90px; font-size: 18px;">Lorem
+                    <p class="aboutus-description mb-5 mt-5 text-justify"
+                        style="width: 425px; font-weight: 700; margin: 90px; font-size: 18px;">Lorem
                         ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut
                         labore
@@ -155,9 +159,113 @@
                 </div>
             </div>
         </section>
+        <section class="container-fluid d-flex flex-column align-items-center justify-content-center">
+            <div class="col-10">
+                <h2 class="font-weight-bold" style="font-size: 36px;">Discover More</h2>
+                <h3 class="font-weight-bold" style="color: #FCA311; margin-left: 175px; margin-top: -10px;">Categories
+                </h3>
+
+            </div>
+            <div class="col-9 mt-4">
+                <p class="text-justify font-weight-bold">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi totam tempore cupiditate
+                    molestiae, excepturi consequatur, quia beatae ex quasi fugit ducimus vel quo illum consequuntur
+                    natus? Officiis ullam veritatis, culpa voluptas harum deleniti unde voluptatem minima doloremque non
+                    numquam ipsa quibusdam vero ex. Reprehenderit aliquam adipisci vitae autem distinctio
+                    necessitatibus.
+                </p>
+            </div>
+            <div class="container d-flex mt-5 user-select-none" style="gap: 40px;">
+                <div class="card bg-transparent border-0 text-white text-center" style="cursor: pointer;">
+                    <img style="filter: brightness(50%); z-index: -4;" src="img/images/modernsofa.png"
+                        alt="yellowchair">
+                    <div class="card-body" style="margin-top: -125px;">
+                        <h3 class="card-title">Modern Sofa</h3>
+                        <h4 class="card-text">30 in-stock</h4>
+                    </div>
+                </div>
+                <div class="card bg-transparent border-0 text-white text-center" style="cursor: pointer;">
+                    <img style="filter: brightness(50%); z-index: -4;" src="img/images/chairs.png" alt="yellowchair">
+                    <div class="card-body" style="margin-top: -125px;">
+                        <h3 class="card-title">Modern Sofa</h3>
+                        <h4 class="card-text">30 in-stock</h4>
+                    </div>
+                </div>
+                <div class="card bg-transparent border-0 text-white text-center" style="cursor: pointer;">
+                    <img style="filter: brightness(50%); z-index: -4;" src="img/images/tables.png" alt="yellowchair">
+                    <div class="card-body" style="margin-top: -125px;">
+                        <h3 class="card-title">Modern Sofa</h3>
+                        <h4 class="card-text">30 in-stock</h4>
+                    </div>
+                </div>
+                <div class="card bg-transparent border-0 text-white text-center" style="cursor: pointer;">
+                    <img style="filter: brightness(50%); z-index: -4;" src="img/images/beds.png" alt="yellowchair">
+                    <div class="card-body" style="margin-top: -125px;">
+                        <h3 class="card-title">Modern Sofa</h3>
+                        <h4 class="card-text">30 in-stock</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex mt-5 mb-5 user-select-none">
+                <div class="container-fluid ml-0 p-0 collapse row flex-nowrap" id="collapseExample" style="gap: 40px;">
+                    <div class="card bg-transparent border-0 text-white text-center" style="cursor: pointer;">
+                        <img style="filter: brightness(50%); z-index: -4;" src="img/images/desks.png" alt="yellowchair">
+                        <div class="card-body" style="margin-top: -125px;">
+                            <h3 class="card-title">Modern Sofa</h3>
+                            <h4 class="card-text">30 in-stock</h4>
+                        </div>
+                    </div>
+                    <div class="card bg-transparent border-0 text-white text-center" style="cursor: pointer;">
+                        <img style="filter: brightness(50%); z-index: -4;" src="img/images/chandeliers.png"
+                            alt="yellowchair">
+                        <div class="card-body" style="margin-top: -125px;">
+                            <h3 class="card-title">Modern Sofa</h3>
+                            <h4 class="card-text">30 in-stock</h4>
+                        </div>
+                    </div>
+                    <div class="card bg-transparent border-0 text-white text-center" style="cursor: pointer;">
+                        <img style="filter: brightness(50%); z-index: -4;" src="img/images/other.png" alt="yellowchair">
+                        <div class="card-body" style="margin-top: -125px;">
+                            <h3 class="card-title">Modern Sofa</h3>
+                            <h4 class="card-text">30 in-stock</h4>
+                        </div>
+                    </div>
+                    <!-- padding -->
+                    <div class="card bg-transparent border-0 text-white text-center" style="width: 305px;"></div>
+                    <!-- padding -->
+                </div>
+            </div>
+            <p class="d-flex flex-column align-items-center">
+                <svg class="arrow" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M12 19V6M5 12l7-7 7 7" />
+                </svg>
+                <a style="color: #14213D; font-size: 24px;" id="show-more" class="font-weight-bold text-decoration-none"
+                    data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    show more
+                </a>
+                <svg class="arrow" style="display: block;" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M12 5v13M5 12l7 7 7-7" />
+                </svg>
+            </p>
+        </section>
+        <section class="container-fluid mt-4" style="background: #FCA311; border-top: 2.5px solid #14213D; height: 500px;">
+            <div class="text-center d-flex flex-column justify-content-center align-items-center">
+                <h2 class="font-weight-bold mb-2" style="margin-top: 85px; font-size: 36px;">Get 30% off with membership</h2>
+                <p class="font-weight-bold col-9 my-5" style="font-size: 24px; font-family: 'Doppio One';">With our membership program, not only do you
+                    save up on things you buy,
+                    you also can unlock exclusive deals, goodies and more!</p>
+                <a href="#" class="mt-4 text-white text-decoration-none" style="background: #14213D; font-size: 30px; font-family: 'Doppio One'; padding: 10px 75px;" role="button">Join now</a>
+            </div>
+        </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
