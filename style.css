@@ -9,10 +9,7 @@
     -webkit-appearance: none;
     appearance: none;
 }
-footer ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
+
 .container__navbar__searchbar {
     background: #E5E5E5;
 }
