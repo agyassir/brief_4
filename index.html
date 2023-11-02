@@ -55,16 +55,64 @@
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
                 </a>
-                <a href="" class="container__navbar__svg-wrap__burgermenu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
-                        stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </a>
+                <svg style="cursor: pointer;" class="container__navbar__svg-wrap__burgermenu burgermenu" xmlns="http://www.w3.org/2000/svg" width="35"
+                    height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
             </div>
         </nav>
+        <div id="menu"
+            class="user-menu container-fluid p-0 position-fixed h-100 user-select-none"
+            style="right: 0; top: 0; width: 400px; z-index: 4; background: #14213D; height: 70%; display: none;">
+            <svg class="position-absolute burgermenu" style="right: 20px; top: 20px; cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="35"
+                height="35" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+            <div class="d-flex align-items-center flex-column h-100 justify-content-center user-select-none"
+                style="gap: 15px;">
+                <div class="d-flex justify-content-center" style="gap: 10px;">
+                    <svg class="mt-1 position-absolute" style="margin-right: 100px;" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    <h3 class="text-white mb-4 border-bottom">Menu</h3>
+                </div>
+                <a class="text-decoration-none d-flex align-items-center border" style="padding: 5px 100px; gap: 10px;"
+                    href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V6l-3-4H6zM3.8 6h16.4M16 10a4 4 0 1 1-8 0" />
+                    </svg>
+                    <h3 class="text-white mt-2">Shop</h3>
+                </a>
+                <a class="text-decoration-none d-flex align-items-center border" style="padding: 5px 100px; gap: 10px;"
+                    href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V6l-3-4H6zM3.8 6h16.4M16 10a4 4 0 1 1-8 0" />
+                    </svg>
+                    <h3 class="text-white mt-2">More</h3>
+                </a>
+                <a class="text-decoration-none d-flex align-items-center border" style="padding: 5px 70px; gap: 10px;"
+                    href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V6l-3-4H6zM3.8 6h16.4M16 10a4 4 0 1 1-8 0" />
+                    </svg>
+                    <h3 class="text-white mt-2">Our Story</h3>
+                </a>
+            </div>
+            <h2 class="position-absolute text-white" style="bottom: 0; right: 100px;">YouMeubles</h2>
+        </div>
     </div>
     <header class="carousel w-100">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -177,8 +225,7 @@
             </div>
             <div class="container d-flex mt-5 user-select-none" style="gap: 40px;">
                 <div class="card bg-transparent border-0 text-white text-center" style="cursor: pointer;">
-                    <img style="filter: brightness(50%); z-index: -4;" src="img/images/modernsofa.png"
-                        alt="Modernsofa">
+                    <img style="filter: brightness(50%); z-index: -4;" src="img/images/modernsofa.png" alt="Modernsofa">
                     <div class="card-body" style="margin-top: -125px;">
                         <h3 class="card-title">Modern Sofa</h3>
                         <h5 class="card-text">30 in-stock</h5>

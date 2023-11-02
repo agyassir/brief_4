@@ -105,3 +105,15 @@
 .newsletter-input:focus {
     outline: none;
 }
+
+.user-menu {
+    display: none;
+}
+
+.user-menu div a {
+    transition: 0.25s ease-in-out;
+}
+
+.user-menu div a:hover {
+    background: #FCA311;
+}
