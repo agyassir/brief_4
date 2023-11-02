@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=DM+Sans:opsz,wght@9..40,200;9..40,400&family=Doppio+One&family=Inter:wght@300&family=Style+Script&display=swap"
+      rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <link rel="stylesheet" href="sweetalert2.min.css">
+</head><body>
+  <button id="btn">dima kokab</button>
+  <div class="toast" id="myToast">
+    <div class="toast-header">
+        <strong class="me-auto"><i class="bi-gift-fill"></i> We miss you!</strong>
+        <small>10 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+        It's been a long time since you visited us. We've something special for you. <a href="#">Click here!</a>
+    </div>
+</div>
+
+<script src="sweetalert2.min.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script>
+ 
+  const btn=document.getElementById("btn")
+  btn.addEventListener("click", function(){
+    Swal.fire('SweetAlert2 is working!')
+  })
+  </script>
+  
+</body>
+
+</html>
