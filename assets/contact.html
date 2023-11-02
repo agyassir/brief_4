@@ -12,11 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <link rel="stylesheet" href="sweetalert2.min.css">
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&display=swap');
-      </style>
+      
 </head>
 
 <body>
@@ -70,6 +66,60 @@
                 </a>
             </div>
         </nav>
+        <div id="menu" class="user-menu container-fluid p-0 position-fixed h-100 user-select-none"
+        style="right: 0; top: 0; width: 400px; z-index: 4; background: #14213D; height: 70%; display: none;">
+        <svg class="position-absolute burgermenu" style="right: 20px; top: 20px; cursor: pointer;"
+            xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+        <div class="d-flex align-items-center flex-column h-100 justify-content-center user-select-none"
+            style="gap: 15px;">
+            <div class="d-flex justify-content-center" style="gap: 10px;">
+                <svg class="mt-1 position-absolute" style="margin-right: 100px;" xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <h3 class="text-white mb-4 border-bottom">Menu</h3>
+            </div>
+            <a class="text-decoration-none d-flex align-items-center border" style="padding: 5px 100px; gap: 10px;"
+                href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2L3 6v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V6l-3-4H6zM3.8 6h16.4M16 10a4 4 0 1 1-8 0" />
+                </svg>
+                <h3 class="text-white mt-2">Shop</h3>
+            </a>
+            <a class="text-decoration-none d-flex align-items-center border" style="padding: 5px 103px; gap: 10px;"
+                href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                </svg>
+                <h3 class="text-white mt-2">Blog</h3>
+            </a>
+            <a class="text-decoration-none d-flex align-items-center border" style="padding: 5px 70px; gap: 10px;"
+                href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <h3 class="text-white mt-2">Our Story</h3>
+            </a>
+        </div>
+        <h2 class="position-absolute text-white" style="bottom: 0; right: 100px;">YouMeubles</h2>
+    </div>
     </div>
     <div class="container title" ><a href="#"><h3 style="color: gray; ">Contact Us</h3></a></div>
     <div class="container belox" >
