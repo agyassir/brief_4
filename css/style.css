@@ -1,6 +1,12 @@
 .text-bold {
     font-weight: 800;
 }
+.way{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 80px;
+    color: grey;
+}
 
 text-color {
     color: #FCA311;
