@@ -16,11 +16,14 @@
 
 <body>
     <div class="container-fluid">
-        <nav class="container__navbar navbar d-flex justify-content-around">
+        <nav class="container__navbar navbar d-flex justify-content-around align-items-center flex-nowrap">
             <a href="index.html" class="container__navbar__title navbar-brand col-2"
                 style="color: #14213D; font-size: 36px;">You<span
                     style="color: #FCA311; font-family: 'Allerta Stencil';">Meubles</span></a>
-            <form class="col-5 container__navbar__searchbar d-flex align-items-center rounded-pill">
+            <a href="index.html" class="container__navbar__title navbar-brand col-2"
+                style="color: #14213D; font-size: 36px; display: none;">Y<span
+                    style="color: #FCA311; font-family: 'Allerta Stencil';">M</span></a>
+            <form class="col-5 container__navbar__searchbar align-items-center rounded-pill">
                 <svg class="container__navbar__searchbar__icon" xmlns="http://www.w3.org/2000/svg" width="24"
                     height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
@@ -31,7 +34,7 @@
                     placeholder="What are you looking for ?" aria-label="Search">
             </form>
             <span class="container__navbar__line">|</span>
-            <div class="container__navbar__svg-wrap d-flex align-items-center">
+            <div class="container__navbar__svg-wrap d-flex align-items-center mr-5">
                 <a href="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -55,21 +58,20 @@
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
                 </a>
-                <svg style="cursor: pointer;" class="container__navbar__svg-wrap__burgermenu burgermenu" xmlns="http://www.w3.org/2000/svg" width="35"
-                    height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round">
+                <svg style="cursor: pointer; width: 35px;" class="container__navbar__svg-wrap__burgermenu burgermenu"
+                    xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg>
             </div>
         </nav>
-        <div id="menu"
-            class="user-menu container-fluid p-0 position-fixed h-100 user-select-none"
+        <div id="menu" class="user-menu container-fluid p-0 position-fixed h-100 user-select-none"
             style="right: 0; top: 0; width: 400px; z-index: 4; background: #14213D; height: 70%; display: none;">
-            <svg class="position-absolute burgermenu" style="right: 20px; top: 20px; cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="35"
-                height="35" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
+            <svg class="position-absolute burgermenu" style="right: 20px; top: 20px; cursor: pointer;"
+                xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
                 <line x1="6" y1="6" x2="18" y2="18"></line>
             </svg>
@@ -94,19 +96,25 @@
                     </svg>
                     <h3 class="text-white mt-2">Shop</h3>
                 </a>
-                <a class="text-decoration-none d-flex align-items-center border" style="padding: 5px 100px; gap: 10px;"
+                <a class="text-decoration-none d-flex align-items-center border" style="padding: 5px 103px; gap: 10px;"
                     href="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M6 2L3 6v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V6l-3-4H6zM3.8 6h16.4M16 10a4 4 0 1 1-8 0" />
+                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
                     </svg>
-                    <h3 class="text-white mt-2">More</h3>
+                    <h3 class="text-white mt-2">Blog</h3>
                 </a>
                 <a class="text-decoration-none d-flex align-items-center border" style="padding: 5px 70px; gap: 10px;"
                     href="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M6 2L3 6v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V6l-3-4H6zM3.8 6h16.4M16 10a4 4 0 1 1-8 0" />
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
                     </svg>
                     <h3 class="text-white mt-2">Our Story</h3>
                 </a>
@@ -173,9 +181,9 @@
         </div>
     </header>
     <main class="container-fluid p-0 mt-5">
-        <section class="main__about-section d-flex flex-column" style="height: 750px; z-index: -4;">
+        <section class="main__about-section d-flex flex-column p-0" style="height: 750px; z-index: -4;">
             <div class="d-flex justify-content-around">
-                <div class="container col-6 d-flex main__about-section__image-wrap justify-content-center">
+                <div class="container col-6 d-flex main__about-section__image-wrap justify-content-center p-0">
                     <div class="mt-5">
                         <div class="filler1 col-5 h-50 position-absolute"
                             style="background: #14213D; z-index: -1; left: 75px; border-radius: 10px; top: 30px;"></div>
@@ -187,14 +195,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 p-0">
                     <h2 class="mt-2 mb-4"
                         style="color: #FCA311; font-family: 'Style Script', cursive; font-size: 60px; margin-left: -50px;">
                         about us</h2>
                     <h3 class="mt-3" style="font-weight: 700; font-size: 36px;">Discover our legacy of</h3>
                     <h3 class="ml-5" style="color: #FCA311; font-weight: 700; font-size: 34px;">Craftsmanship and style
                     </h3>
-                    <p class="aboutus-description mb-5 mt-5 text-justify"
+                    <p class="aboutus-description my-5 mr-0 text-justify"
                         style="width: 425px; font-weight: 700; margin: 90px; font-size: 18px;">Lorem
                         ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut
@@ -207,8 +215,8 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid d-flex flex-column align-items-center justify-content-center">
-            <div class="col-10">
+        <section class="container-fluid d-flex flex-column align-items-center justify-content-center p-0">
+            <div class="col-10 p-0">
                 <h2 class="font-weight-bold" style="font-size: 36px;">Discover More</h2>
                 <h3 class="font-weight-bold" style="color: #FCA311; margin-left: 175px; margin-top: -10px;">Categories
                 </h3>
@@ -358,7 +366,7 @@
                     <li><a href="" class="text-muted">About YouMeubles</a></li>
                     <li><a href="" class="text-muted">Contact</a></li>
                     <li><a href="" class="text-muted">News</a></li>
-                    <li><a href="" class="text-muted">Blog</a></li>
+                    <li><a href="" class="text-muted">Other</a></li>
                 </ul>
             </div>
             <div class="col-3 mx-5 border-right">

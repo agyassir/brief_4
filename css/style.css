@@ -12,6 +12,7 @@
 
 .container__navbar__searchbar {
     background: #E5E5E5;
+    display: flex;
 }
 
 .container__navbar__searchbar__icon {
@@ -35,7 +36,7 @@
 }
 
 .container__navbar__svg-wrap__burgermenu {
-    margin: 3.5px 60px 0 50px;
+    margin: 0 0 0 35px;
 }
 
 .container__navbar__line {
