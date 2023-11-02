@@ -1,4 +1,39 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&display=swap');
+
+
+.form-group{
+  margin-bottom: 3rem;
+}
+.belox{
+  margin-top: 10vh;
+   max-width: 1250px;
+}
+.title{
+  margin-top: 5vh;
+}
+.menu{
+  display:none;
+}
+.logos{
+  color:#ffffff; 
+  font-size: 36px;
+}
+.col{
+  color: #ffffff;
+}
+.col ul{
+  list-style: none;
+  margin: 10vh 0;
+}
+.grf{
+  justify-content: center;
+  
+}
+
+
 .text-bold {
     font-weight: 800;
 }
@@ -161,6 +196,27 @@ width: 100%;
     .carousel-inner .carousel-item>div:first-child {
         display: block;
     }
+    .hero{
+        display: none;
+       }
+       .belox{
+        margin-top: -7vh;
+       }
+       .title{
+        text-align: center;
+       }
+       .formulaire h2{
+        display: none;
+       }
+       .iconf{
+        display: none;
+       }
+       .menu{
+        display:flex;
+       }
+       .logos{
+        margin-left:30vw;
+       }
 }
 
 .carousel-inner .carousel-item.active,
