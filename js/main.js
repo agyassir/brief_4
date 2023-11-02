@@ -12,3 +12,17 @@ showMore.addEventListener('click', () => {
         arrow[1].style.display = 'block';
     }
 })
+
+let menu = document.getElementById('menu');
+let burgerMenu = document.getElementsByClassName('burgermenu');
+burgerMenu = Array.from(burgerMenu);
+
+burgerMenu.forEach((element) => {
+    element.addEventListener('click', () => {
+        if(menu.style.display == 'none') {
+            menu.style.display = 'block';
+        } else {
+            menu.style.display = 'none';
+        }
+    })    
+});

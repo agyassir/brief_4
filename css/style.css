@@ -265,6 +265,7 @@ width: 100%;
 
 .container__navbar__searchbar {
     background: #E5E5E5;
+    display: flex;
 }
 
 .container__navbar__searchbar__icon {
@@ -288,7 +289,7 @@ width: 100%;
 }
 
 .container__navbar__svg-wrap__burgermenu {
-    margin: 3.5px 60px 0 50px;
+    margin: 0 0 0 35px;
 }
 
 .container__navbar__line {
@@ -357,4 +358,16 @@ width: 100%;
 
 .newsletter-input:focus {
     outline: none;
+}
+
+.user-menu {
+    display: none;
+}
+
+.user-menu div a {
+    transition: 0.25s ease-in-out;
+}
+
+.user-menu div a:hover {
+    background: #FCA311;
 }
