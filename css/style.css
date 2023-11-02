@@ -1,13 +1,6 @@
 .text-bold {
     font-weight: 800;
 }
-.way{
-    display: flex;
-    margin-top: 40px;
-    margin-left: 80px;
-    color: grey;
-}
-
 text-color {
     color: #FCA311;
 }
@@ -124,6 +117,12 @@ text-color {
 
     .carousel-inner .carousel-item>div:first-child {
         display: block;
+    }
+    #email-bar{
+        display: none;
+    }
+    #listes{
+        display: none;
     }
 }
 

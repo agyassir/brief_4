@@ -181,13 +181,14 @@
         <span class="visually-hidden">Next</span>
     </button>
     </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     </section>
+
     <footer class="container-fluid" style="background: #14213D; height: 600px;">
         <div class="row col-5 d-flex justify-content-center align-items-center p-3 pb-0">
             <a href="" class="text-white h2 text-decoration-none" style="font-size: 36px; margin-top: 40px;">You<span
                     style="font-family: 'Allerta Stencil'; color: #FCA311;">Meubles</span></a>
         </div>
+        <div id="email-bar">
         <div class="col-11 d-flex flex-column align-items-end">
             <div class="d-flex justify-content-center align-items-center" style="gap: 20px;">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -205,7 +206,6 @@
                 <h2 class="text-white align-self-center mr-5" style="font-size: 20px;">Send an email, get the newsletter
                     !
                 </h2>
-            </div>
             <form style="width: 450px;" class="bg-white d-flex p-0 text-center">
                 <input class="newsletter-input ml-2 form-control-plaintext font-weight-bold" maxlength="30"
                     type="search" placeholder="your email" aria-label="Search">
@@ -219,6 +219,8 @@
                 </button>
             </form>
         </div>
+    </div>
+    </div>
         <div class="container d-flex mt-5 justify-content-center align-items-center text-white text-decoration-none"
             style="gap: 20px;">
             <div class="col-3 mx-5 h-50 border-right">
@@ -230,6 +232,7 @@
                     <li><a href="" class="text-decoration-none text-white">Blog</a></li>
                 </ul>
             </div>
+            <div id="listes">
             <div class="col-3 mx-5 border-right">
                 <ul class="list-unstyled">
                     <li class="mb-2"><b>YouMeubles help</b></li>
@@ -249,6 +252,8 @@
                 </ul>
             </div>
         </div>
+    </div>
+    <div id="contacts">
         <div class="container flex-column mt-5">
             <hr class="bg-white" style="margin-top: 115px;">
             <div class="col-12 d-flex justify-content-between align-items-center h-100">
@@ -299,8 +304,9 @@
                 </div>
             </div>
         </div>
+    </div>
     </footer>
-    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script>
         $('.carousel .carousel-item').each(function () {
     var minPerSlide = 4;
@@ -309,7 +315,6 @@
     next = $(this).siblings(':first');
     }
     next.children(':first-child').clone().appendTo($(this));
-
     for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
     </script>
         </body>
