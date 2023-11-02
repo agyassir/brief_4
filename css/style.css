@@ -253,10 +253,6 @@ width: 100%;
     padding: 0;
 }
 
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-}
-
 .icons{
     margin-left: 13.5px;
     margin-right: 10px;
