@@ -51,15 +51,21 @@
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
                 </a>
-                <a href="" class="container__navbar__svg-wrap__burgermenu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
-                        stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                <div>
+                    <svg id="burgerMenu" width="35px" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
                     </svg>
-                </a>
+                </div>
             </div>
+            <div id="show-items-respon">
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Our Srory</a></li>
+                </ul>
+                </div>
         </nav>
     </div>
     <section class="main__content">
@@ -134,7 +140,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 
 <p class="details-title text-color mb-1 d-flex justify-content-center"><b>Related Products</b></p>
-<div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
+<div id="myCarousele" class="carousel slide container" data-bs-ride="carousel">
     <div class="carousel-inner w-100">
         <div class="carousel-item active">
             <div class="col-md-3">
@@ -188,7 +194,6 @@
             <a href="" class="text-white h2 text-decoration-none" style="font-size: 36px; margin-top: 40px;">You<span
                     style="font-family: 'Allerta Stencil'; color: #FCA311;">Meubles</span></a>
         </div>
-        <div id="email-bar">
         <div class="col-11 d-flex flex-column align-items-end">
             <div class="d-flex justify-content-center align-items-center" style="gap: 20px;">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -206,6 +211,7 @@
                 <h2 class="text-white align-self-center mr-5" style="font-size: 20px;">Send an email, get the newsletter
                     !
                 </h2>
+            </div>
             <form style="width: 450px;" class="bg-white d-flex p-0 text-center">
                 <input class="newsletter-input ml-2 form-control-plaintext font-weight-bold" maxlength="30"
                     type="search" placeholder="your email" aria-label="Search">
@@ -219,8 +225,6 @@
                 </button>
             </form>
         </div>
-    </div>
-    </div>
         <div class="container d-flex mt-5 justify-content-center align-items-center text-white text-decoration-none"
             style="gap: 20px;">
             <div class="col-3 mx-5 h-50 border-right">
@@ -232,7 +236,6 @@
                     <li><a href="" class="text-decoration-none text-white">Blog</a></li>
                 </ul>
             </div>
-            <div id="listes">
             <div class="col-3 mx-5 border-right">
                 <ul class="list-unstyled">
                     <li class="mb-2"><b>YouMeubles help</b></li>
@@ -252,8 +255,6 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <div id="contacts">
         <div class="container flex-column mt-5">
             <hr class="bg-white" style="margin-top: 115px;">
             <div class="col-12 d-flex justify-content-between align-items-center h-100">
@@ -304,10 +305,26 @@
                 </div>
             </div>
         </div>
-    </div>
     </footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script>
+        // -------burger menu-------//
+        let btnSvg = document.querySelector("#burgerMenu");
+        let menuItems = document.querySelector("#show-items-respon");
+        let ulUppanded = document.querySelector("#ul-appended");
+        btnSvg.addEventListener("click",function(){ 
+            if (menuItems.style.display === 'none' || menuItems.style.display === '') {
+            menuItems.style.display ='block';
+        } else {
+            menuItems.style.display = 'none';
+        }
+        })
+        window.addEventListener("resize", function(){
+            if (window.innerWidth >= 769) {
+            menuItems.style.display = 'none';
+            }
+        });
+         // -------carousel cards-------//
         $('.carousel .carousel-item').each(function () {
     var minPerSlide = 4;
     var next = $(this).next();
