@@ -187,7 +187,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 
 <p class="details-title text-color mb-1 d-flex justify-content-center"><b>Related Products</b></p>
-<div id="myCarousele" class="carousel slide container" data-bs-ride="carousel">
+<div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
     <div class="carousel-inner w-100">
         <div class="carousel-item active">
             <div class="col-md-3">
@@ -356,7 +356,19 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script>
         // -------burger menu-------//
-    
+                let menu = document.getElementById('menu');
+        let burgerMenu = document.getElementsByClassName('burgermenu');
+        burgerMenu = Array.from(burgerMenu);
+
+        burgerMenu.forEach((element) => {
+            element.addEventListener('click', () => {
+                if(menu.style.display == 'none') {
+                    menu.style.display = 'block';
+                } else {
+                    menu.style.display = 'none';
+                }
+            })    
+        });
          // -------carousel cards-------//
         $('.carousel .carousel-item').each(function () {
     var minPerSlide = 4;
