@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <link rel="stylesheet" href="sweetalert2.min.css">
-      <script src="/js/main.js"></script>
+      
 </head>
 
 <body>
@@ -281,7 +281,6 @@
             </div>
         </div>
     </footer>
-<script src="../js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
        <script src="sweetalert2.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -298,6 +297,20 @@
 })
               
             })
+            let menu = document.getElementById('menu');
+let burgerMenu = document.getElementsByClassName('burgermenu');
+burgerMenu = Array.from(burgerMenu);
+
+burgerMenu.forEach((element) => {
+    element.addEventListener('click', () => {
+        if(menu.style.display == 'none') {
+            menu.style.display = 'block';
+            console.log("asa")
+        } else {
+            menu.style.display = 'none';
+        }
+    })    
+});
             </script>
 </body>
 
