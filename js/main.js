@@ -21,6 +21,7 @@ burgerMenu.forEach((element) => {
     element.addEventListener('click', () => {
         if(menu.style.display == 'none') {
             menu.style.display = 'block';
+            console.log("asa")
         } else {
             menu.style.display = 'none';
         }
