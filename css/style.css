@@ -36,7 +36,6 @@
 text-color {
     color: #FCA311;
 }
-
 #burgerMenu{
     display: inline;
     cursor: pointer;
@@ -163,7 +162,7 @@ width: 100%;
     color: #FCA311;
 }
 
-#myCarousele {
+#myCarousel {
     margin-bottom: 50px;
 }
 @media (max-width: 768px) {
