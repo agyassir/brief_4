@@ -37,48 +37,6 @@ text-color {
     color: #FCA311;
 }
 
-#burgerMenu{
-    display: inline;
-    cursor: pointer;
-}
-#show-items-respon{
-    z-index: 1;
-    height: 146px;
-    width: 100%;
-    background-color: #f9fafb;
-    position: fixed;
-    top: 65px;
-    display: none;
-}
-#show-items-respon ul{
-display: flex;
-flex-direction: column;
-gap: 20px;
-align-items: end;
-text-decoration: none;
-padding: 20px 20px;
-justify-content: end;
-width: 100%;
-}
-#show-items-respon ul li{
-    width: 100%;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #fff;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-}
-#show-items-respon ul li:hover{
-    cursor: pointer !important;
-    background-color: red !important;
-    color: #fff;
-}
-#show-items-respon ul li a{
-    text-decoration: none !important;
-    color: inherit;
-    content: none;
-    list-style: none !important;
-}
 /* Main image - left */
 .main-img img {
     width: 100%;
@@ -163,8 +121,8 @@ width: 100%;
     color: #FCA311;
 }
 
-#myCarousele {
-    margin-top: 50px;
+#myCarousel {
+    margin-bottom: 50px;
 }
 @media (max-width: 768px) {
     .container__navbar__searchbar__input, .container__navbar__searchbar__icon{

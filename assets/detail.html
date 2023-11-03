@@ -59,13 +59,60 @@
                     </svg>
                 </div>
             </div>
-            <div id="show-items-respon">
-                <ul>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Our Srory</a></li>
-                </ul>
+            <div id="menu" class="user-menu container-fluid p-0 position-fixed h-100 user-select-none"
+            style="right: 0; top: 0; width: 400px; z-index: 4; background: #14213D; height: 70%; display: none;">
+            <svg class="position-absolute burgermenu" style="right: 20px; top: 20px; cursor: pointer;"
+                xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+            <div class="d-flex align-items-center flex-column h-100 justify-content-center user-select-none"
+                style="gap: 15px;">
+                <div class="d-flex justify-content-center" style="gap: 10px;">
+                    <svg class="mt-1 position-absolute" style="margin-right: 100px;" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    <h3 class="text-white mb-4 border-bottom">Menu</h3>
                 </div>
+                <a class="text-decoration-none d-flex align-items-center border" style="padding: 5px 100px; gap: 10px;"
+                    href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V6l-3-4H6zM3.8 6h16.4M16 10a4 4 0 1 1-8 0" />
+                    </svg>
+                    <h3 class="text-white mt-2">Shop</h3>
+                </a>
+                <a class="text-decoration-none d-flex align-items-center border" style="padding: 5px 103px; gap: 10px;"
+                    href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                    </svg>
+                    <h3 class="text-white mt-2">Blog</h3>
+                </a>
+                <a class="text-decoration-none d-flex align-items-center border" style="padding: 5px 70px; gap: 10px;"
+                    href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <h3 class="text-white mt-2">Our Story</h3>
+                </a>
+            </div>
+            <h2 class="position-absolute text-white" style="bottom: 0; right: 100px;">YouMeubles</h2>
+        </div>
         </nav>
     </div>
     <section class="main__content">
@@ -140,7 +187,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 
 <p class="details-title text-color mb-1 d-flex justify-content-center"><b>Related Products</b></p>
-<div id="myCarousele" class="carousel slide container" data-bs-ride="carousel">
+<div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
     <div class="carousel-inner w-100">
         <div class="carousel-item active">
             <div class="col-md-3">
@@ -309,20 +356,18 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script>
         // -------burger menu-------//
-        let btnSvg = document.querySelector("#burgerMenu");
-        let menuItems = document.querySelector("#show-items-respon");
-        let ulUppanded = document.querySelector("#ul-appended");
-        btnSvg.addEventListener("click",function(){ 
-            if (menuItems.style.display === 'none' || menuItems.style.display === '') {
-            menuItems.style.display ='block';
-        } else {
-            menuItems.style.display = 'none';
-        }
-        })
-        window.addEventListener("resize", function(){
-            if (window.innerWidth >= 769) {
-            menuItems.style.display = 'none';
-            }
+                let menu = document.getElementById('menu');
+        let burgerMenu = document.getElementsByClassName('burgermenu');
+        burgerMenu = Array.from(burgerMenu);
+
+        burgerMenu.forEach((element) => {
+            element.addEventListener('click', () => {
+                if(menu.style.display == 'none') {
+                    menu.style.display = 'block';
+                } else {
+                    menu.style.display = 'none';
+                }
+            })    
         });
          // -------carousel cards-------//
         $('.carousel .carousel-item').each(function () {
