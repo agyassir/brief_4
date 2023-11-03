@@ -36,7 +36,48 @@
 text-color {
     color: #FCA311;
 }
-
+#burgerMenu{
+    display: inline;
+    cursor: pointer;
+}
+#show-items-respon{
+    z-index: 1;
+    height: 146px;
+    width: 100%;
+    background-color: #f9fafb;
+    position: fixed;
+    top: 65px;
+    display: none;
+}
+#show-items-respon ul{
+display: flex;
+flex-direction: column;
+gap: 20px;
+align-items: end;
+text-decoration: none;
+padding: 20px 20px;
+justify-content: end;
+width: 100%;
+}
+#show-items-respon ul li{
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+#show-items-respon ul li:hover{
+    cursor: pointer !important;
+    background-color: red !important;
+    color: #fff;
+}
+#show-items-respon ul li a{
+    text-decoration: none !important;
+    color: inherit;
+    content: none;
+    list-style: none !important;
+}
 /* Main image - left */
 .main-img img {
     width: 100%;
@@ -171,25 +212,28 @@ text-color {
        .logos{
         margin-left:30vw;
        }
+       .listted{
+        display: none;
+       }
 }
 
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-start,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
+.carousel-inner  .carousel-item-next,
+.carousel-inner  .carousel-item-prev {
     display: flex;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next,
+    .carousel-inner  .carousel-item-right.active,
+    .carousel-inner  .carousel-item-next,
     .carousel-item-next:not(.carousel-item-start) {
         transform: translateX(25%) !important;
     }
 
-    .carousel-inner .carousel-item-left.active,
-    .carousel-item-prev:not(.carousel-item-end),
+    .carousel-inner  .carousel-item-left.active,
+    .-item-prev:not(.carousel-item-end),
     .active.carousel-item-start,
     .carousel-item-prev:not(.carousel-item-end) {
         transform: translateX(-25%) !important;
@@ -200,11 +244,11 @@ text-color {
         transform: translateX(0) !important;
     }
 
-    .carousel-inner .carousel-item-prev,
-    .carousel-item-prev:not(.carousel-item-end) {
+    .carousel-inner  .carousel-item-prev,
+    .item-prev:not(.carousel-item-end) {
         transform: translateX(-25%) !important;
     }
-}
+} */
 * {
     font-family: 'Doppio One','Inter', sans-serif;
     margin: 0;

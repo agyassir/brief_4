@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <link rel="stylesheet" href="sweetalert2.min.css">
-      
+      <script src="/js/main.js"></script>
 </head>
 
 <body>
     <div class="container-fluid">
         <nav class="container__navbar navbar d-flex justify-content-around align-items-center flex-nowrap">
-            <a href="index.html" class="container__navbar__title navbar-brand col-2"
+            <a href="../index.html" class="container__navbar__title navbar-brand col-2"
                 style="color: #14213D; font-size: 36px;">You<span
                     style="color: #FCA311; font-family: 'Allerta Stencil';">Meubles</span></a>
             <a href="index.html" class="container__navbar__title navbar-brand col-2"
@@ -144,11 +144,11 @@
 
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Full name here">
+                            <input type="text" class="form-control" id="name" placeholder="Full name here" required>
                         </div>
                         <div class="form-group ">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email here">
+                            <input type="email" class="form-control" id="email" placeholder="Email here" required>
                         </div>
                         <div class="form-group ">
                             <label for="message">Message</label>
@@ -220,7 +220,7 @@
                     <li><a href="" class="text-muted">Products</a></li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-3 listted">
                 <ul class="list-unstyled">
                     <li class="mb-2"><b>Legal & Stuff</b></li>
                     <li><a href="" class="text-muted">Terms and services</a></li>
@@ -281,7 +281,8 @@
             </div>
         </div>
     </footer>
-
+<script src="../js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
        <script src="sweetalert2.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script>
