@@ -164,7 +164,7 @@ width: 100%;
 }
 
 #myCarousele {
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
 @media (max-width: 768px) {
     .container__navbar__searchbar__input, .container__navbar__searchbar__icon{
@@ -225,7 +225,7 @@ width: 100%;
     display: flex;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 
     .carousel-inner  .carousel-item-right.active,
     .carousel-inner  .carousel-item-next,
@@ -249,7 +249,7 @@ width: 100%;
     .item-prev:not(.carousel-item-end) {
         transform: translateX(-25%) !important;
     }
-}
+} */
 * {
     font-family: 'Doppio One','Inter', sans-serif;
     margin: 0;
